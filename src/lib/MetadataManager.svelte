@@ -113,6 +113,10 @@
   const onUpdateChanged = () => {
     output = JSON.stringify(buildOutput(), null, 2);
   }
+  const loadSample = () => {
+    input = input_hint;
+    onInputChanged();
+  }
 </script>
 
 <div class="metadata-manager">
@@ -126,6 +130,7 @@
       bind:value={input}
       on:input={onInputChanged}
       />
+    <div><button on:click={loadSample}>샘플 불러오기</button></div>
   </div>
   {#if error_message === null}
     <div class="manage">
