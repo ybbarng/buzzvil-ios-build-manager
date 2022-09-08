@@ -282,6 +282,25 @@
 input:checked + .button {
   outline: 4px auto #99c8ff;
   background: #3e5269;
-
+}
+@media (prefers-color-scheme: light) {
+  .module .semver {
+    border-color: #9acbdb;
+    background: #c2ede9;
+  }
+  .module .build-number {
+    border-color: #8bc7a8;
+    background: #c7edda;
+  }
+  .button {
+    background-color: #e5e5e5;
+  }
+  .button:hover {
+    border-color: #3d96fc;
+  }
+  input:checked + .button {
+    outline: 4px auto #99c8ff;
+    background: #a3ceff;
+  }
 }
 </style>
