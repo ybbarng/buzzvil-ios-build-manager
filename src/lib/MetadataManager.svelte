@@ -262,6 +262,7 @@
 .update {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .button {
   border-radius: 8px;
