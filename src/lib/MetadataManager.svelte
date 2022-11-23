@@ -54,6 +54,8 @@
     if (input.length === 0) {
       return;
     }
+    input = input.replaceAll("“", '"')
+      .replaceAll("”", '"');
     try {
       updateModules(JSON.parse(input));
     } catch(e) {
